@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class bullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision){
         Destroy(gameObject);
