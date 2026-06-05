@@ -644,7 +644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &390936549
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -844,6 +844,37 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &454748957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454748958}
+  m_Layer: 3
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454748958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454748957}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622591046
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,13 +908,13 @@ MonoBehaviour:
   - position: {fileID: 338361390}
     targetPrefab: {fileID: 455918090529246455, guid: 67e957503d421fa41a27a1e0fe21af4d, type: 3}
     quantity: 2
-    scale: {x: 1000, y: 1000, z: 1000}
+    scale: {x: 100, y: 100, z: 100}
     rotation: {x: 0, y: 0, z: 0}
     moveHorizontal: 0
     moveVertical: 0
     moveSpeed: 0
     moveRange: 0
-    health: 0
+    health: 1
     pointsValue: 0
 --- !u!4 &622591048
 Transform:
@@ -1347,7 +1378,7 @@ Transform:
   m_GameObject: {fileID: 1585565673}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: -5.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1369,8 +1400,8 @@ MonoBehaviour:
   mouseSensitivity: 100
   playerBody: {fileID: 1585565675}
   lockCursor: 1
-  bulletPrefab: {fileID: 1675332535}
-  firePoint: {fileID: 0}
+  bulletPrefab: {fileID: 2705892773918061726, guid: 7d32d7937ae2f9b48bdfc0bd5fe8e4b6, type: 3}
+  firePoint: {fileID: 1838020865}
   bulletSpeed: 50
   fireRate: 0.2
   maxAmmo: 30
@@ -1385,7 +1416,7 @@ MonoBehaviour:
   gameDuration: 60
   targetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!136 &1585565677
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1854,3 +1885,4 @@ SceneRoots:
   - {fileID: 338361390}
   - {fileID: 622591048}
   - {fileID: 1838020865}
+  - {fileID: 454748958}
