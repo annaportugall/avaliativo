@@ -191,7 +191,7 @@ public class FPSAimController : MonoBehaviour
         
         if (rb != null)
         {
-            rb.velocity = shootDirection * bulletSpeed;
+            rb.linearVelocity = shootDirection * bulletSpeed;
         }
         
         // Optional: Draw debug line to see trajectory
